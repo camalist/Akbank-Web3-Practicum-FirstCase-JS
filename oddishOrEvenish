@@ -1,1 +1,20 @@
+function oddishOrEvenish(value) {
+    var  sum = 0;
+
+while (value) {
+    sum += value % 10;
+    value = Math.floor(value / 10);
+}
+
+console.log(sum);
+
+
+if(isEven(sum)) return "Even"
+return "Odd"
+
+}
+
+function isEven(num) {
+return num % 2 === 0;
+}
 
